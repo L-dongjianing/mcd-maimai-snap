@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- 麦麦拍一下 · 发现卡样式样例（与 scripts/render_card.js 输出样式一致）
+     此文件为静态演示样例，实际卡片请用渲染器生成，保证时间戳真实 -->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>麦麦发现卡 · 活动（样例）</title>
+<style>
+  :root { --mcd-red: #da291c; --ink: #2b2320; --paper: #fffdf8; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background: #f4efe6; color: var(--ink); display: flex; justify-content: center; padding: 24px 12px; }
+  .card { width: 100%; max-width: 420px; background: var(--paper); border-radius: 20px; overflow: hidden; box-shadow: 0 12px 32px rgba(43,35,32,.18); }
+  .card-head { background: var(--mcd-red); color: #fff; padding: 18px 22px 16px; }
+  .card-head .tag { display: inline-block; font-size: 12px; letter-spacing: 1px; background: rgba(255,255,255,.18); border-radius: 999px; padding: 3px 12px; margin-bottom: 10px; }
+  .card-head h1 { font-size: 19px; line-height: 1.45; font-weight: 700; }
+  .card-body { padding: 20px 22px 8px; }
+  section { margin-bottom: 18px; }
+  h2 { font-size: 13px; color: var(--mcd-red); letter-spacing: 2px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+  h2::after { content: ""; flex: 1; height: 1px; background: rgba(0,0,0,.08); }
+  ul, ol { padding-left: 1.3em; }
+  li { font-size: 14.5px; line-height: 1.7; margin-bottom: 4px; }
+  ol li::marker { color: var(--mcd-red); font-weight: 700; }
+  .empty { font-size: 14px; color: #a89f94; font-style: italic; }
+  .caveats { background: #fff6e0; border-radius: 10px; padding: 10px 14px; margin: 0 22px 14px; }
+  .caveats p { font-size: 12.5px; color: #8a6d1a; line-height: 1.6; }
+  .card-foot { border-top: 1px dashed rgba(0,0,0,.15); padding: 12px 22px 18px; font-size: 11.5px; color: #a89f94; line-height: 1.6; }
+  .brand { text-align: center; margin-top: 6px; font-size: 12px; color: var(--ink); letter-spacing: 2px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-head">
+      <span class="tag">🎟️ 麦麦发现卡 · 拍海报 · 发现玩法</span>
+      <h1>这场联名活动 10 月 24 日开始，官方日历已收录，买指定套餐即可参与。</h1>
+    </div>
+    <div class="card-body">
+      <section>
+        <h2>👀 我看到了什么</h2>
+        <ul>
+          <li>图里说这是「×× 联名」，10.24 开启，买套餐可抽奖。</li>
+          <li>海报角落小字"数量有限，售完即止"（待确认适用范围）。</li>
+        </ul>
+      </section>
+      <section>
+        <h2>🤝 和你有什么关系</h2>
+        <ul>
+          <li>麦当劳官方活动日历已收录：10 月 24 日 – 11 月 7 日，进行中。</li>
+          <li>参与方式：到店购买联名套餐 → App 内抽奖，无需额外付费。</li>
+        </ul>
+      </section>
+      <section>
+        <h2>👉 接下来怎么做</h2>
+        <ol>
+          <li>10 月 24 日后到店购买联名套餐；</li>
+          <li>打开麦当劳 App「我的卡包」查看抽奖入口；</li>
+          <li>想要周边实物，可回复"查周边"看积分商城兑换。</li>
+        </ol>
+      </section>
+    </div>
+    <div class="caveats">
+      <p>⚠️ 本样例数据仅用于演示卡片样式，活动名称与日期为虚构。</p>
+    </div>
+    <div class="card-foot">
+      查询时间：样例演示（实际卡片由渲染器写入真实时间）<br>
+      本卡由「麦麦拍一下」基于麦当劳官方 MCP 数据生成，信息以麦当劳官方实时结果为准；转发前请注意时效。
+      <div class="brand">🍔 麦麦拍一下 · 把看到的变成看得懂的</div>
+    </div>
+  </div>
+</body>
+</html>
